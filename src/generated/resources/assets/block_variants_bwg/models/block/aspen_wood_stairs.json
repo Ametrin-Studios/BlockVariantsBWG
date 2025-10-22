@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "biomeswevegone:block/aspen/log",
+    "side": "biomeswevegone:block/aspen/log",
+    "top": "biomeswevegone:block/aspen/log"
+  }
+}
