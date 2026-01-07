@@ -1,7 +1,7 @@
 package com.ametrin.block_variants.bwg.data.provider;
 
 import com.ametrin.block_variants.bwg.BlockVariantsBWGIntegration;
-import com.ametrin.block_variants.bwg.registry.BOCreateveModeTabs;
+import com.ametrin.block_variants.bwg.registry.BOCreativeModeTabs;
 import com.ametrin.block_variants.bwg.registry.BOWoodBlocks;
 import com.ametrinstudios.ametrin.data.provider.ExtendedLanguageProvider;
 import net.minecraft.data.PackOutput;
@@ -14,7 +14,7 @@ public final class BOLanguageProvider extends ExtendedLanguageProvider {
 
     @Override
     protected void addTranslations() {
-        add(BOCreateveModeTabs.BLOCK_VARIANTS_BWG_TRANSLATION_KEY, "Block Variants - Oh The Biomes We've Gone");
+        add(BOCreativeModeTabs.BLOCK_VARIANTS_BWG_TRANSLATION_KEY, "Block Variants - Oh The Biomes We've Gone");
 
 
         family("Aspen Log").stairs(BOWoodBlocks.ASPEN_LOG_STAIRS).slab(BOWoodBlocks.ASPEN_LOG_SLAB);

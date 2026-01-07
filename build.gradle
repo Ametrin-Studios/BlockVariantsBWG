@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.115'
+    id 'net.neoforged.moddev' version '2.0.137'
     id 'idea'
 }
 
@@ -34,8 +34,8 @@ neoForge {
         }
 
         data {
-            data()
-            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath(), '--existing-mod', 'biomeswevegone'
+            clientData()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
         }
 
         configureEach {
@@ -80,11 +80,11 @@ repositories {
 dependencies {
     implementation "com.ametrinstudios:ametrin:${minecraft_version}-${ametrin_version}"
     implementation "com.ametrinstudios:block_variants:${minecraft_version}-${bv_version}"
-    implementation "curse.maven:oh-the-biomes-weve-gone-1070751:7040627"
-    localRuntime "curse.maven:terrablender-neoforge-940057:6054947"
-    localRuntime "curse.maven:geckolib-388172:7023453"
-    localRuntime "curse.maven:oh-the-trees-youll-grow-962544:7096302"
-    localRuntime "curse.maven:corgilib-693313:6808264"
+    implementation "curse.maven:oh-the-biomes-weve-gone-1070751:7386826"
+    localRuntime "curse.maven:terrablender-neoforge-940057:7326873"
+    localRuntime "curse.maven:geckolib-388172:7405440"
+    localRuntime "curse.maven:oh-the-trees-youll-grow-962544:7363818"
+    localRuntime "curse.maven:corgilib-693313:7386252"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
@@ -92,7 +92,6 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
             neo_version            : neo_version,
-            loader_version_range   : loader_version_range,
 
             ametrin_version         : ametrin_version,
             ametrin_version_range   : ametrin_version_range,

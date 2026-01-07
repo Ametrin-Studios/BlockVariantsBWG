@@ -5,19 +5,17 @@ import com.ametrin.block_variants.bwg.registry.BOItems;
 import com.ametrinstudios.ametrin.data.provider.ExtendedItemTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
 public final class BOItemTagsProvider extends ExtendedItemTagsProvider {
 
-    public BOItemTagsProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTagProvider) {
-        super(packOutput, lookupProvider, blockTagProvider, BlockVariantsBWGIntegration.MOD_ID, null);
+    public BOItemTagsProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(packOutput, lookupProvider, BlockVariantsBWGIntegration.MOD_ID);
     }
 
     @Override
-    protected void addTags(HolderLookup.@NotNull Provider provider) {
+    protected void addTags(HolderLookup.Provider provider) {
         runRules(BOItems.REGISTER);
     }
 }

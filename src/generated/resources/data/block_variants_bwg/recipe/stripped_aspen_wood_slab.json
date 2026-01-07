@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "biomeswevegone:stripped_aspen_wood"
-    }
+    "#": "biomeswevegone:stripped_aspen_wood"
   },
   "pattern": [
     "###"

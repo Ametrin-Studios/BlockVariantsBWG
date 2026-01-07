@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": {
-      "item": "minecraft:stick"
-    },
-    "W": {
-      "item": "biomeswevegone:aspen_wood"
-    }
+    "#": "minecraft:stick",
+    "W": "biomeswevegone:aspen_wood"
   },
   "pattern": [
     "#W#",

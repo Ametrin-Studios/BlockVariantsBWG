@@ -8,17 +8,16 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.*;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
 public final class BOBlockTagsProvider extends ExtendedBlockTagsProvider {
     public BOBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, BlockVariantsBWGIntegration.MOD_ID, null);
+        super(output, registries, BlockVariantsBWGIntegration.MOD_ID);
     }
 
     @Override
-    protected void addTags(@NotNull HolderLookup.Provider provider) {
+    protected void addTags(HolderLookup.Provider provider) {
         var mineableWithAxe = tag(BlockTags.MINEABLE_WITH_AXE);
 
         var woodenStairs = tag(BlockTags.WOODEN_STAIRS);
@@ -28,18 +27,18 @@ public final class BOBlockTagsProvider extends ExtendedBlockTagsProvider {
         var woodenFenceGates = tag(BlockTags.FENCE_GATES);
 
         for (var block : BOWoodBlocks.REGISTER.getEntries()) {
-            mineableWithAxe.add(block.getKey());
+            mineableWithAxe.add(block.get());
 
             if (block.value() instanceof StairBlock) {
-                woodenStairs.add(block.getKey());
+                woodenStairs.add(block.get());
             } else if (block.value() instanceof SlabBlock) {
-                woodenSlabs.add(block.getKey());
+                woodenSlabs.add(block.get());
             } else if (block.value() instanceof WallBlock) {
-                woodenWalls.add(block.getKey());
+                woodenWalls.add(block.get());
             } else if (block.value() instanceof FenceBlock) {
-                woodenFences.add(block.getKey());
+                woodenFences.add(block.get());
             } else if (block.value() instanceof FenceGateBlock) {
-                woodenFenceGates.add(block.getKey());
+                woodenFenceGates.add(block.get());
             }
         }
     }

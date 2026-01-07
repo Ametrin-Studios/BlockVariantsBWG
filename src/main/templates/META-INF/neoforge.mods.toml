@@ -1,7 +1,5 @@
-modLoader="javafml" #mandatory
-loaderVersion="${loader_version_range}" #mandatory
 license="${mod_license}"
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+issueTrackerURL="https://github.com/Ametrin-Studios/BlockVariantsBWG/issues" #optional
 
 [[mods]] #mandatory
 modId="${mod_id}" #mandatory
