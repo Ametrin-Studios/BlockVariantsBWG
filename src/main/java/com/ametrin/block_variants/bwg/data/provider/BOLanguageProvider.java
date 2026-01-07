@@ -22,6 +22,10 @@ public final class BOLanguageProvider extends ExtendedLanguageProvider {
         family("Aspen Wood").stairs(BOWoodBlocks.ASPEN_WOOD_STAIRS).slab(BOWoodBlocks.ASPEN_WOOD_SLAB).wall(BOWoodBlocks.ASPEN_WOOD_WALL).fence(BOWoodBlocks.ASPEN_WOOD_FENCE).fenceGate(BOWoodBlocks.ASPEN_WOOD_FENCE_GATE);
         family("Stripped Aspen Wood").stairs(BOWoodBlocks.STRIPPED_ASPEN_WOOD_STAIRS).slab(BOWoodBlocks.STRIPPED_ASPEN_WOOD_SLAB).wall(BOWoodBlocks.STRIPPED_ASPEN_WOOD_WALL).fence(BOWoodBlocks.STRIPPED_ASPEN_WOOD_FENCE).fenceGate(BOWoodBlocks.STRIPPED_ASPEN_WOOD_FENCE_GATE);
 
+        family("Baobab Log").stairs(BOWoodBlocks.BAOBAB_LOG_STAIRS).slab(BOWoodBlocks.BAOBAB_LOG_SLAB);
+        family("Stripped Baobab Log").stairs(BOWoodBlocks.STRIPPED_BAOBAB_LOG_STAIRS).slab(BOWoodBlocks.STRIPPED_BAOBAB_LOG_SLAB);
+        family("Baobab Wood").stairs(BOWoodBlocks.BAOBAB_WOOD_STAIRS).slab(BOWoodBlocks.BAOBAB_WOOD_SLAB).wall(BOWoodBlocks.BAOBAB_WOOD_WALL).fence(BOWoodBlocks.BAOBAB_WOOD_FENCE).fenceGate(BOWoodBlocks.BAOBAB_WOOD_FENCE_GATE);
+        family("Stripped Baobab Wood").stairs(BOWoodBlocks.STRIPPED_BAOBAB_WOOD_STAIRS).slab(BOWoodBlocks.STRIPPED_BAOBAB_WOOD_SLAB).wall(BOWoodBlocks.STRIPPED_BAOBAB_WOOD_WALL).fence(BOWoodBlocks.STRIPPED_BAOBAB_WOOD_FENCE).fenceGate(BOWoodBlocks.STRIPPED_BAOBAB_WOOD_FENCE_GATE);
     }
 
     public FamilyBuilder family(String name) {

@@ -26,6 +26,11 @@ public final class BORecipeProvider extends ExtendedRecipeProvider {
         stairSlab(BOWoodBlocks.STRIPPED_ASPEN_LOG_STAIRS.get(), BOWoodBlocks.STRIPPED_ASPEN_LOG_SLAB.get(), BWGWood.ASPEN.strippedLogStem(), false);
         recipeWoods(BOWoodBlocks.ASPEN_WOOD_STAIRS.get(), BOWoodBlocks.ASPEN_WOOD_SLAB.get(), BOWoodBlocks.ASPEN_WOOD_WALL.get(), BOWoodBlocks.ASPEN_WOOD_FENCE.get(), BOWoodBlocks.ASPEN_WOOD_FENCE_GATE.get(), BWGWood.ASPEN.wood(), BWGWood.ASPEN.logstem());
         recipeWoods(BOWoodBlocks.STRIPPED_ASPEN_WOOD_STAIRS.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_SLAB.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_WALL.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_FENCE.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_FENCE_GATE.get(), BWGWood.ASPEN.strippedWood(), BWGWood.ASPEN.strippedLogStem());
+
+        stairSlab(BOWoodBlocks.BAOBAB_LOG_STAIRS.get(), BOWoodBlocks.BAOBAB_LOG_SLAB.get(), BWGWood.BAOBAB.logstem(), false);
+        stairSlab(BOWoodBlocks.STRIPPED_BAOBAB_LOG_STAIRS.get(), BOWoodBlocks.STRIPPED_BAOBAB_LOG_SLAB.get(), BWGWood.BAOBAB.strippedLogStem(), false);
+        recipeWoods(BOWoodBlocks.BAOBAB_WOOD_STAIRS.get(), BOWoodBlocks.BAOBAB_WOOD_SLAB.get(), BOWoodBlocks.BAOBAB_WOOD_WALL.get(), BOWoodBlocks.BAOBAB_WOOD_FENCE.get(), BOWoodBlocks.BAOBAB_WOOD_FENCE_GATE.get(), BWGWood.BAOBAB.wood(), BWGWood.BAOBAB.logstem());
+        recipeWoods(BOWoodBlocks.STRIPPED_BAOBAB_WOOD_STAIRS.get(), BOWoodBlocks.STRIPPED_BAOBAB_WOOD_SLAB.get(), BOWoodBlocks.STRIPPED_BAOBAB_WOOD_WALL.get(), BOWoodBlocks.STRIPPED_BAOBAB_WOOD_FENCE.get(), BOWoodBlocks.STRIPPED_BAOBAB_WOOD_FENCE_GATE.get(), BWGWood.BAOBAB.strippedWood(), BWGWood.BAOBAB.strippedLogStem());
     }
 
     public void recipeWoods(StairBlock stairs, SlabBlock slab, WallBlock wall, FenceBlock fence, FenceGateBlock fenceGate, ItemLike material, ItemLike altMaterial) {

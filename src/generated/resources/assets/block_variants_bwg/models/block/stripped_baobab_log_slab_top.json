@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "biomeswevegone:block/baobab/stripped_log_top",
+    "side": "biomeswevegone:block/baobab/stripped_log",
+    "top": "biomeswevegone:block/baobab/stripped_log_top"
+  }
+}

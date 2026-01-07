@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "block_variants_bwg:block/baobab_wood_slab"
+    },
+    "type=double": {
+      "model": "biomeswevegone:block/baobab_wood"
+    },
+    "type=top": {
+      "model": "block_variants_bwg:block/baobab_wood_slab_top"
+    }
+  }
+}

@@ -1,17 +1,17 @@
 package com.ametrin.block_variants.bwg.data.provider;
 
 import com.ametrin.block_variants.bwg.BlockVariantsBWGIntegration;
-import com.ametrin.block_variants.bwg.registry.BOWoodBlocks;
+import com.ametrin.block_variants.bwg.registry.BOBlockFamilies;
 import com.ametrinstudios.ametrin.data.provider.ExtendedModelProvider;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TextureMapping;
 import net.minecraft.client.data.models.model.TextureSlot;
+import net.minecraft.data.BlockFamily;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.*;
-import net.potionstudios.biomeswevegone.world.level.block.wood.BWGWood;
 
 import static com.barion.block_variants.data.provider.BVModelProvider.*;
 
@@ -22,18 +22,31 @@ public final class BOModelProvider extends ExtendedModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-        // ASPEN
-        logStairsSlab(blockModels, BWGWood.ASPEN.logstem(), BOWoodBlocks.ASPEN_LOG_STAIRS.get(), BOWoodBlocks.ASPEN_LOG_SLAB.get());
-        logStairsSlab(blockModels, BWGWood.ASPEN.strippedLogStem(), BOWoodBlocks.STRIPPED_ASPEN_LOG_STAIRS.get(), BOWoodBlocks.STRIPPED_ASPEN_LOG_SLAB.get());
-        woodStairsSlabWallFenceGate(blockModels, BWGWood.ASPEN.logstem(), BOWoodBlocks.ASPEN_WOOD_STAIRS.get(), BOWoodBlocks.ASPEN_WOOD_SLAB.get(), BWGWood.ASPEN.wood(), BOWoodBlocks.ASPEN_WOOD_WALL.get(), BOWoodBlocks.ASPEN_WOOD_FENCE.get(), BOWoodBlocks.ASPEN_WOOD_FENCE_GATE.get());
-        woodStairsSlabWallFenceGate(blockModels, BWGWood.ASPEN.strippedLogStem(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_STAIRS.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_SLAB.get(), BWGWood.ASPEN.strippedWood(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_WALL.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_FENCE.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_FENCE_GATE.get());
+
+        for (var family : BOBlockFamilies.LOG_FAMILIES) {
+            logStairsSlab(blockModels, family.getBaseBlock(),
+                    (StairBlock) family.get(BlockFamily.Variant.STAIRS),
+                    (SlabBlock) family.get(BlockFamily.Variant.SLAB)
+            );
+        }
+
+        for (var family : BOBlockFamilies.WOOD_FAMILIES) {
+            woodStairsSlabWallFenceGate(blockModels, family.getBaseBlock(),
+                    (StairBlock) family.get(BlockFamily.Variant.STAIRS),
+                    (SlabBlock) family.get(BlockFamily.Variant.SLAB),
+                    family.getBaseBlock(),
+                    (WallBlock) family.get(BlockFamily.Variant.WALL),
+                    (FenceBlock) family.get(BlockFamily.Variant.FENCE),
+                    (FenceGateBlock) family.get(BlockFamily.Variant.FENCE_GATE)
+            );
+        }
     }
 
-    private static void woodStairsSlabWallFenceGate(BlockModelGenerators blockModels, Block base, StairBlock stair, SlabBlock slab, Block doubleSlap, WallBlock wall, FenceBlock fence, FenceGateBlock gate) {
+    private static void woodStairsSlabWallFenceGate(BlockModelGenerators blockModels, Block base, StairBlock stair, SlabBlock slab, Block doubleSlab, WallBlock wall, FenceBlock fence, FenceGateBlock gate) {
         var mapping = TextureMapping.cube(getLogBlockTexture(base));
         customWall(blockModels, wall, mapping);
         customStairs(blockModels, stair, mapping);
-        customSlab(blockModels, slab, doubleSlap, mapping);
+        customSlab(blockModels, slab, doubleSlab, mapping);
         customFence(blockModels, fence, mapping);
         customFenceGate(blockModels, gate, mapping);
     }
@@ -71,7 +84,8 @@ public final class BOModelProvider extends ExtendedModelProvider {
 
     private static Identifier getLogBlockTexture(Block block) {
         return TextureMapping.getBlockTexture(block).withPath(s -> {
-            if(!s.startsWith("block/stripped_")){
+            s = s.replace("_wood", "_log");
+            if (!s.startsWith("block/stripped_")) {
                 return s.replace("_log", "/log");
             }
             return s.replace("stripped_", "").replace("_log", "/stripped_log");
