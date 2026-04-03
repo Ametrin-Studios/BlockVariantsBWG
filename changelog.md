@@ -1,26 +1,26 @@
 ## 1.0.0
-- Aspen variants
-- Baobab variants
-- Blue Enchanted variants
-- Cika variants
-- Cypress variants
-- Ebony variants
-- Fir variants
-- Florus variants
-- Green Enchanted variants
-- Holly variants
-- Ironwood variants
-- Jacaranda variants
-- Mahogany variants
-- Maple variants
-- Palm variants
-- Pine variants
-- Rainbow Eucalyptus variants
-- Redwood variants
-- Sakura variants
-- Skyris variants
-- Spirit variants
-- White Mangrove variants
-- Willow variants
-- Witch Hazel variants
-- Zelkova variants
+- Aspen Log/Wood variants
+- Baobab Log/Wood variants
+- Blue Enchanted Log/Wood variants
+- Cika Log/Wood variants
+- Cypress Log/Wood variants
+- Ebony Log/Wood variants
+- Fir Log/Wood variants
+- Florus Log/Wood variants
+- Green Enchanted Log/Wood variants
+- Holly Log/Wood variants
+- Ironwood Log/Wood variants
+- Jacaranda Log/Wood variants
+- Mahogany Log/Wood variants
+- Maple Log/Wood variants
+- Palm Log/Wood variants
+- Pine Log/Wood variants
+- Rainbow Eucalyptus Log/Wood variants
+- Redwood Log/Wood variants
+- Sakura Log/Wood variants
+- Skyris Log/Wood variants
+- Spirit Log/Wood variants
+- White Mangrove Log/Wood variants
+- Willow Log/Wood variants
+- Witch Hazel Log/Wood variants
+- Zelkova Log/Wood variants
