@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:green_enchanted_wood"
+    "#": {
+      "item": "biomeswevegone:green_enchanted_wood"
+    }
   },
   "pattern": [
     "###",

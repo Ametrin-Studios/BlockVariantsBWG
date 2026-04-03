@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:stripped_cika_log"
+    "#": {
+      "item": "biomeswevegone:stripped_cika_log"
+    }
   },
   "pattern": [
     "###",

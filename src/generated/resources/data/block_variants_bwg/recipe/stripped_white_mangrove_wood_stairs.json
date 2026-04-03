@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:stripped_white_mangrove_wood"
+    "#": {
+      "item": "biomeswevegone:stripped_white_mangrove_wood"
+    }
   },
   "pattern": [
     "#  ",

@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:cika_wood"
+    "#": {
+      "item": "biomeswevegone:cika_wood"
+    }
   },
   "pattern": [
     "###",

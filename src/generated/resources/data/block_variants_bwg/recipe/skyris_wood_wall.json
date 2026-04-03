@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:skyris_wood"
+    "#": {
+      "item": "biomeswevegone:skyris_wood"
+    }
   },
   "pattern": [
     "###",

@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:aspen_log"
+    "#": {
+      "item": "biomeswevegone:aspen_log"
+    }
   },
   "pattern": [
     "###",

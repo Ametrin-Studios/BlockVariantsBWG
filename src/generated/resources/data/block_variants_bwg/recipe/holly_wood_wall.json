@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:holly_wood"
+    "#": {
+      "item": "biomeswevegone:holly_wood"
+    }
   },
   "pattern": [
     "###",

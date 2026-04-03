@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:pine_wood"
+    "#": {
+      "item": "biomeswevegone:pine_wood"
+    }
   },
   "pattern": [
     "###",

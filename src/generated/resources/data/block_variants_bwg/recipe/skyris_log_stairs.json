@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:skyris_log"
+    "#": {
+      "item": "biomeswevegone:skyris_log"
+    }
   },
   "pattern": [
     "#  ",

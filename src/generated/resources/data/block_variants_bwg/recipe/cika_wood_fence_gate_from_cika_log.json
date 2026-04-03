@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": "minecraft:stick",
-    "W": "biomeswevegone:cika_log"
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "biomeswevegone:cika_log"
+    }
   },
   "pattern": [
     "#W#",

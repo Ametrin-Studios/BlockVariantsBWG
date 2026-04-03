@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "minecraft:stick",
-    "W": "biomeswevegone:blue_enchanted_wood"
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "biomeswevegone:blue_enchanted_wood"
+    }
   },
   "pattern": [
     "W#W",

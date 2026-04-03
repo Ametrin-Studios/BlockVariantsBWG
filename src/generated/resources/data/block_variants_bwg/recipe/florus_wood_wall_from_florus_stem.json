@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:florus_stem"
+    "#": {
+      "item": "biomeswevegone:florus_stem"
+    }
   },
   "pattern": [
     "###",

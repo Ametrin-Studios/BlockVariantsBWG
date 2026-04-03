@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:redwood_log"
+    "#": {
+      "item": "biomeswevegone:redwood_log"
+    }
   },
   "pattern": [
     "###",

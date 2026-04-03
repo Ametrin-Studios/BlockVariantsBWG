@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:spirit_log"
+    "#": {
+      "item": "biomeswevegone:spirit_log"
+    }
   },
   "pattern": [
     "###",

@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:fir_wood"
+    "#": {
+      "item": "biomeswevegone:fir_wood"
+    }
   },
   "pattern": [
     "#  ",

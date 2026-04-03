@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:stripped_palm_wood"
+    "#": {
+      "item": "biomeswevegone:stripped_palm_wood"
+    }
   },
   "pattern": [
     "###",

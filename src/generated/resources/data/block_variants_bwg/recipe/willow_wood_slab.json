@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:willow_wood"
+    "#": {
+      "item": "biomeswevegone:willow_wood"
+    }
   },
   "pattern": [
     "###"

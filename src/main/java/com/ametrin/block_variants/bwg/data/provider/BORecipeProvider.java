@@ -7,7 +7,6 @@ import com.ametrinstudios.ametrin.data.provider.ExtendedRecipeProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.resources.Identifier;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.ItemLike;
@@ -16,40 +15,27 @@ import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.potionstudios.biomeswevegone.world.level.block.wood.BWGWood;
 
-import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public final class BORecipeProvider extends ExtendedRecipeProvider {
 
-    public BORecipeProvider(HolderLookup.Provider registries, RecipeOutput output, Set<Identifier> recipeSet) {
-        super(BlockVariantsBWGIntegration.MOD_ID, registries, output, recipeSet);
+    private RecipeOutput output;
+    public BORecipeProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
+        super(packOutput, BlockVariantsBWGIntegration.MOD_ID, registries);
     }
 
     @Override
-    protected void buildRecipes() {
+    protected void buildRecipes(RecipeOutput output) {
+        this.output = output;
+
         var featureflagSet = FeatureFlagSet.of(FeatureFlags.VANILLA);
         for (var family : BOBlockFamilies.LOG_FAMILIES) {
-            generateRecipes(family, featureflagSet);
-//            stairSlab(
-//                    (StairBlock) family.get(BlockFamily.Variant.STAIRS),
-//                    (SlabBlock) family.get(BlockFamily.Variant.SLAB),
-//                    family.getBaseBlock(),
-//                    false
-//            );
+            generateRecipes(output, family, featureflagSet);
         }
 
         for (var family : BOBlockFamilies.WOOD_FAMILIES) {
-            generateRecipes(family, featureflagSet);
-//            recipeWoods(
-//                    (StairBlock) family.get(BlockFamily.Variant.STAIRS),
-//                    (SlabBlock) family.get(BlockFamily.Variant.SLAB),
-//                    (WallBlock) family.get(BlockFamily.Variant.WALL),
-//                    (FenceBlock) family.get(BlockFamily.Variant.FENCE),
-//                    (FenceGateBlock) family.get(BlockFamily.Variant.FENCE_GATE),
-//                    family.getBaseBlock()
-//            );
+            generateRecipes(output, family, featureflagSet);
         }
-
 
         wallFenceFenceGate(BOWoodBlocks.ASPEN_WOOD_WALL.get(), BOWoodBlocks.ASPEN_WOOD_FENCE.get(), BOWoodBlocks.ASPEN_WOOD_FENCE_GATE.get(), BWGWood.ASPEN.logstem(), false);
         wallFenceFenceGate(BOWoodBlocks.STRIPPED_ASPEN_WOOD_WALL.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_FENCE.get(), BOWoodBlocks.STRIPPED_ASPEN_WOOD_FENCE_GATE.get(), BWGWood.ASPEN.strippedLogStem(), false);
@@ -141,25 +127,8 @@ public final class BORecipeProvider extends ExtendedRecipeProvider {
 //    }
 
     public void wallFenceFenceGate(WallBlock wall, FenceBlock fence, FenceGateBlock fenceGate, ItemLike material, boolean hasStonecutting) {
-        wall(wall, material, hasStonecutting);
-        fence(fence, material);
-        fenceGate(fenceGate, material);
-    }
-
-    public static class Runner extends ExtendedRecipeProvider.Runner {
-
-        public Runner(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
-            super(packOutput, registries);
-        }
-
-        @Override
-        protected ExtendedRecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput, Set<Identifier> set) {
-            return new BORecipeProvider(provider, recipeOutput, set);
-        }
-
-        @Override
-        public String getName() {
-            return "Block Variants Recipe Provider";
-        }
+        wall(output, wall, material, hasStonecutting);
+        fence(output, fence, material);
+        fenceGate(output, fenceGate, material);
     }
 }

@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:stripped_mahogany_log"
+    "#": {
+      "item": "biomeswevegone:stripped_mahogany_log"
+    }
   },
   "pattern": [
     "###",

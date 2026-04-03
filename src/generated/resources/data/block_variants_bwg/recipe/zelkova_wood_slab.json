@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:zelkova_wood"
+    "#": {
+      "item": "biomeswevegone:zelkova_wood"
+    }
   },
   "pattern": [
     "###"

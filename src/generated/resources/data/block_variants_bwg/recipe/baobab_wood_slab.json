@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:baobab_wood"
+    "#": {
+      "item": "biomeswevegone:baobab_wood"
+    }
   },
   "pattern": [
     "###"

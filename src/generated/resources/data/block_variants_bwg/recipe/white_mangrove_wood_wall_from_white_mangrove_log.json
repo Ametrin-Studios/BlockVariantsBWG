@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:white_mangrove_log"
+    "#": {
+      "item": "biomeswevegone:white_mangrove_log"
+    }
   },
   "pattern": [
     "###",

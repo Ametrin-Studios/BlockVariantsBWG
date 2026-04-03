@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:ironwood_log"
+    "#": {
+      "item": "biomeswevegone:ironwood_log"
+    }
   },
   "pattern": [
     "###"

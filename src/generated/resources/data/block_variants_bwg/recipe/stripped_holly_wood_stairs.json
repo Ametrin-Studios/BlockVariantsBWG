@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:stripped_holly_wood"
+    "#": {
+      "item": "biomeswevegone:stripped_holly_wood"
+    }
   },
   "pattern": [
     "#  ",

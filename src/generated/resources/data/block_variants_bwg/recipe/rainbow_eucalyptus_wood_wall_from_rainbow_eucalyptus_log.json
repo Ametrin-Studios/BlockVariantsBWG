@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:rainbow_eucalyptus_log"
+    "#": {
+      "item": "biomeswevegone:rainbow_eucalyptus_log"
+    }
   },
   "pattern": [
     "###",

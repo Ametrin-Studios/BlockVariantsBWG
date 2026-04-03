@@ -25,12 +25,12 @@ public class BlockVariantsBWGIntegration {
         modEventBus.addListener(BlockVariantsBWGIntegration::gatherData);
     }
 
-    private static void gatherData(final GatherDataEvent.Client event) {
-        event.createProvider(BOModelProvider::new);
-        event.createProvider(BORecipeProvider.Runner::new);
+    private static void gatherData(final GatherDataEvent event) {
+        event.createProvider(output -> new BOBlockStateProvider(output, event.getExistingFileHelper()));
+        event.createProvider(output -> new BOItemModelProvider(output, event.getExistingFileHelper()));
+        event.createProvider(BORecipeProvider::new);
         event.createProvider(BOLanguageProvider::new);
-        event.createProvider(BOBlockTagsProvider::new);
-        event.createProvider(BOItemTagsProvider::new);
+        event.createBlockAndItemTags(BOBlockTagsProvider::new, BOItemTagsProvider::new);
         event.createProvider(CustomLootTableProvider.builder()
                 .addBlockProvider(BOBlockLootProvider::new)
                 ::build);

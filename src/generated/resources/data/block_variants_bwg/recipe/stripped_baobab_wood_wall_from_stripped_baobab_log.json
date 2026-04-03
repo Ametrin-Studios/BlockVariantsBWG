@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:stripped_baobab_log"
+    "#": {
+      "item": "biomeswevegone:stripped_baobab_log"
+    }
   },
   "pattern": [
     "###",

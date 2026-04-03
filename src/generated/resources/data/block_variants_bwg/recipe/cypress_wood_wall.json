@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:cypress_wood"
+    "#": {
+      "item": "biomeswevegone:cypress_wood"
+    }
   },
   "pattern": [
     "###",

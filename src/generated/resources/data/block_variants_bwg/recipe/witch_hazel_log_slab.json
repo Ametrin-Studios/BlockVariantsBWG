@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:witch_hazel_log"
+    "#": {
+      "item": "biomeswevegone:witch_hazel_log"
+    }
   },
   "pattern": [
     "###"

@@ -13,7 +13,7 @@ version = mod_version
 group = mod_group_id
 
 base {
-    archivesName = mod_id
+    archivesName = "$mod_id-$minecraft_version"
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -34,8 +34,8 @@ neoForge {
         }
 
         data {
-            clientData()
-            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+            data()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath(), '--existing-mod', 'biomeswevegone'
         }
 
         configureEach {
@@ -80,11 +80,11 @@ repositories {
 dependencies {
     implementation "com.ametrinstudios:ametrin:${minecraft_version}-${ametrin_version}"
     implementation "com.ametrinstudios:block_variants:${minecraft_version}-${bv_version}"
-    implementation "curse.maven:oh-the-biomes-weve-gone-1070751:7741205"
-    localRuntime "curse.maven:terrablender-neoforge-940057:7326873"
-    localRuntime "curse.maven:geckolib-388172:7705308"
-    localRuntime "curse.maven:oh-the-trees-youll-grow-962544:7363818"
-    localRuntime "curse.maven:corgilib-693313:7386252"
+    implementation "curse.maven:oh-the-biomes-weve-gone-1070751:7745142"
+    localRuntime "curse.maven:terrablender-neoforge-940057:6054947"
+    localRuntime "curse.maven:geckolib-388172:7707149"
+    localRuntime "curse.maven:oh-the-trees-youll-grow-962544:7864151"
+    localRuntime "curse.maven:corgilib-693313:7773534"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

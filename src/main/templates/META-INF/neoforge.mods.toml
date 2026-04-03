@@ -1,3 +1,5 @@
+modLoader="javafml" # mandatory
+loaderVersion="[1,)" # mandatory
 license="${mod_license}"
 issueTrackerURL="https://github.com/Ametrin-Studios/BlockVariantsBWG/issues" # optional
 

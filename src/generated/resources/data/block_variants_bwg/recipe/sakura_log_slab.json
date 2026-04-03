@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:sakura_log"
+    "#": {
+      "item": "biomeswevegone:sakura_log"
+    }
   },
   "pattern": [
     "###"

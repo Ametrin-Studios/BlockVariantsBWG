@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:holly_log"
+    "#": {
+      "item": "biomeswevegone:holly_log"
+    }
   },
   "pattern": [
     "###",

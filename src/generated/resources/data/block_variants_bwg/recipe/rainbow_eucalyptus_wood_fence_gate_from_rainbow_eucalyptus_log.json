@@ -2,8 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-    "#": "minecraft:stick",
-    "W": "biomeswevegone:rainbow_eucalyptus_log"
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "biomeswevegone:rainbow_eucalyptus_log"
+    }
   },
   "pattern": [
     "#W#",

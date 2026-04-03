@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:stripped_willow_log"
+    "#": {
+      "item": "biomeswevegone:stripped_willow_log"
+    }
   },
   "pattern": [
     "###"

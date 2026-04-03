@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:spirit_wood"
+    "#": {
+      "item": "biomeswevegone:spirit_wood"
+    }
   },
   "pattern": [
     "#  ",

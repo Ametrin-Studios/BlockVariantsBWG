@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:ebony_wood"
+    "#": {
+      "item": "biomeswevegone:ebony_wood"
+    }
   },
   "pattern": [
     "###",

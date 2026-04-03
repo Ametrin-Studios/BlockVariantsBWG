@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:stripped_jacaranda_wood"
+    "#": {
+      "item": "biomeswevegone:stripped_jacaranda_wood"
+    }
   },
   "pattern": [
     "#  ",

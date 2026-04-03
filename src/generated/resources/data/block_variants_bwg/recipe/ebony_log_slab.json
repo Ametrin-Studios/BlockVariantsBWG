@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": "biomeswevegone:ebony_log"
+    "#": {
+      "item": "biomeswevegone:ebony_log"
+    }
   },
   "pattern": [
     "###"

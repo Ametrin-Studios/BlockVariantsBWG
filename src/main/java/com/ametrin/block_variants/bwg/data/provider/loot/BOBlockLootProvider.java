@@ -14,7 +14,7 @@ public final class BOBlockLootProvider extends ExtendedBlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(BOWoodBlocks.getAllBlocks());
+        dropSelf(BOWoodBlocks.getAllBlocks().iterator());
     }
 
     @Override

@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": "biomeswevegone:sakura_wood"
+    "#": {
+      "item": "biomeswevegone:sakura_wood"
+    }
   },
   "pattern": [
     "###",
