@@ -1,21 +1,21 @@
 license="${mod_license}"
-issueTrackerURL="https://github.com/Ametrin-Studios/BlockVariantsBWG/issues" #optional
+issueTrackerURL="https://github.com/Ametrin-Studios/BlockVariantsBWG/issues" # optional
 
-[[mods]] #mandatory
-modId="${mod_id}" #mandatory
-version="${mod_version}" #mandatory
-displayName="${mod_name}" #mandatory
-#updateJSONURL="https://change.me.example.invalid/updates.json" #optional
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
-#logoFile="examplemod.png" #optional
-#credits="" #optional
-authors="${mod_authors}" #optional
+[[mods]] # mandatory
+modId="${mod_id}" # mandatory
+version="${mod_version}" # mandatory
+displayName="${mod_name}" # mandatory
+updateJSONURL="https://raw.githubusercontent.com/Ametrin-Studios/BlockVariantsBWG/refs/heads/main/updates.json" # optional
+displayURL="https://www.curseforge.com/minecraft/mc-mods/block-variants-bwg" # optional
+logoFile="logo.png" # optional
+credits="AOCAWOL and this team for creating Oh The Biomes We've Gone" # optional
+authors="${mod_authors}" # optional
 description='''${mod_description}'''
 
-[[dependencies.${mod_id}]] #optional
-    modId="neoforge" #mandatory
-    type="required" #mandatory
-    versionRange="[${neo_version},)" #mandatory
+[[dependencies.${mod_id}]] # optional
+    modId="neoforge" # mandatory
+    type="required" # mandatory
+    versionRange="${neo_version_range}" # mandatory
     ordering="NONE"
     side="BOTH"
 
