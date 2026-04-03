@@ -84,11 +84,13 @@ public final class BOModelProvider extends ExtendedModelProvider {
 
     private static Identifier getLogBlockTexture(Block block) {
         return TextureMapping.getBlockTexture(block).withPath(s -> {
-            s = s.replace("_wood", "_log");
+            var type = s.contains("florus") ? "stem" : "log";
+            var _type = "_" + type;
+            s = s.replace("_wood", _type);
             if (!s.startsWith("block/stripped_")) {
-                return s.replace("_log", "/log");
+                return s.replace(_type, "/" + type);
             }
-            return s.replace("stripped_", "").replace("_log", "/stripped_log");
+            return s.replace("stripped_", "").replace(_type, "/stripped_" + type);
         });
     }
 }

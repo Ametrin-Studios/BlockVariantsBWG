@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "biomeswevegone:block/florus/stripped_stem",
+    "side": "biomeswevegone:block/florus/stripped_stem",
+    "top": "biomeswevegone:block/florus/stripped_stem"
+  }
+}

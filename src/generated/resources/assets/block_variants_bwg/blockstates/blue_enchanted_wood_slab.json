@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "block_variants_bwg:block/blue_enchanted_wood_slab"
+    },
+    "type=double": {
+      "model": "biomeswevegone:block/blue_enchanted_wood"
+    },
+    "type=top": {
+      "model": "block_variants_bwg:block/blue_enchanted_wood_slab_top"
+    }
+  }
+}

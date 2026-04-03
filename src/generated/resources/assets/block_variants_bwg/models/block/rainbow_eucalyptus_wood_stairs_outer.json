@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "biomeswevegone:block/rainbow_eucalyptus/log",
+    "side": "biomeswevegone:block/rainbow_eucalyptus/log",
+    "top": "biomeswevegone:block/rainbow_eucalyptus/log"
+  }
+}

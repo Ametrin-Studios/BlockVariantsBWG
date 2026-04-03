@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_green_enchanted_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:green_enchanted_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "block_variants_bwg:green_enchanted_wood_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_green_enchanted_wood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "block_variants_bwg:green_enchanted_wood_stairs"
+    ]
+  }
+}

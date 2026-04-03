@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spirit_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:spirit_log"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "block_variants_bwg:spirit_wood_fence_from_spirit_log"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_spirit_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "block_variants_bwg:spirit_wood_fence_from_spirit_log"
+    ]
+  }
+}

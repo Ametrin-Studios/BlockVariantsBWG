@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "biomeswevegone:block/skyris/stripped_log",
+    "side": "biomeswevegone:block/skyris/stripped_log",
+    "top": "biomeswevegone:block/skyris/stripped_log"
+  }
+}

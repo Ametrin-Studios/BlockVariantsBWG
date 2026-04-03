@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "block_variants_bwg:willow_wood_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_willow_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "biomeswevegone:willow_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_willow_wood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "block_variants_bwg:willow_wood_slab"
+    ]
+  }
+}

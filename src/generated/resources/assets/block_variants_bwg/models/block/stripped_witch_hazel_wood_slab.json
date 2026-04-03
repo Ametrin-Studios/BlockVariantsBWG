@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "biomeswevegone:block/witch_hazel/stripped_log",
+    "side": "biomeswevegone:block/witch_hazel/stripped_log",
+    "top": "biomeswevegone:block/witch_hazel/stripped_log"
+  }
+}

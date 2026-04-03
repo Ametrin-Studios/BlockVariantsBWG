@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "biomeswevegone:block/blue_enchanted/stripped_log",
+    "side": "biomeswevegone:block/blue_enchanted/stripped_log",
+    "top": "biomeswevegone:block/blue_enchanted/stripped_log"
+  }
+}

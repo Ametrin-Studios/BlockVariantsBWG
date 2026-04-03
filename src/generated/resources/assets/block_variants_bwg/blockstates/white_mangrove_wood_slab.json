@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "block_variants_bwg:block/white_mangrove_wood_slab"
+    },
+    "type=double": {
+      "model": "biomeswevegone:block/white_mangrove_wood"
+    },
+    "type=top": {
+      "model": "block_variants_bwg:block/white_mangrove_wood_slab_top"
+    }
+  }
+}

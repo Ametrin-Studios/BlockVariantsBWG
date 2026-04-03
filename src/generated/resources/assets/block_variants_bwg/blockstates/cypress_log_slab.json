@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "block_variants_bwg:block/cypress_log_slab"
+    },
+    "type=double": {
+      "model": "biomeswevegone:block/cypress_log"
+    },
+    "type=top": {
+      "model": "block_variants_bwg:block/cypress_log_slab_top"
+    }
+  }
+}

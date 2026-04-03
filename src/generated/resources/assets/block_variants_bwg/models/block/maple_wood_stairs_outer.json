@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "biomeswevegone:block/maple/log",
+    "side": "biomeswevegone:block/maple/log",
+    "top": "biomeswevegone:block/maple/log"
+  }
+}

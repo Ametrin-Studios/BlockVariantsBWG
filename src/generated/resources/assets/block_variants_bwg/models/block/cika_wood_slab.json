@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "biomeswevegone:block/cika/log",
+    "side": "biomeswevegone:block/cika/log",
+    "top": "biomeswevegone:block/cika/log"
+  }
+}

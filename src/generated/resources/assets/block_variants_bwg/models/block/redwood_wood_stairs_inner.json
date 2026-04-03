@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "biomeswevegone:block/redwood/log",
+    "side": "biomeswevegone:block/redwood/log",
+    "top": "biomeswevegone:block/redwood/log"
+  }
+}
