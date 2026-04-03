@@ -1,0 +1,26 @@
+## 1.0.0
+- Aspen variants
+- Baobab variants
+- Blue Enchanted variants
+- Cika variants
+- Cypress variants
+- Ebony variants
+- Fir variants
+- Florus variants
+- Green Enchanted variants
+- Holly variants
+- Ironwood variants
+- Jacaranda variants
+- Mahogany variants
+- Maple variants
+- Palm variants
+- Pine variants
+- Rainbow Eucalyptus variants
+- Redwood variants
+- Sakura variants
+- Skyris variants
+- Spirit variants
+- White Mangrove variants
+- Willow variants
+- Witch Hazel variants
+- Zelkova variants
