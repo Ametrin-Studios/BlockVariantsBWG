@@ -1,3 +1,6 @@
+## 1.0.1
+- fix open fence gates breakable by water
+
 ## 1.0.0
 - Aspen Log/Wood variants
 - Baobab Log/Wood variants

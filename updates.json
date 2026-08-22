@@ -1,10 +1,17 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/block-variants-bwg",
   "promos": {
-    "1.21.11-latest": "1.0.0",
-    "1.21.11-recommended": "1.0.0"
+    "1.21.11-latest": "1.0.1",
+    "1.21.11-recommended": "1.0.1",
+    "1.21.1-latest": "1.0.1",
+    "1.21.1-recommended": "1.0.1"
   },
   "1.21.11": {
+    "1.0.1": "fixes",
+    "1.0.0": "inital release"
+  },
+  "1.21.1": {
+    "1.0.1": "fixes",
     "1.0.0": "inital release"
   }
 }

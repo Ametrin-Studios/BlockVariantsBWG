@@ -1,7 +1,0 @@
-// 1.21.11	2026-04-03T09:59:35.762176559	Tags for minecraft:block mod id block_variants_bwg
-d7711747162bb6de1b33f2d9b7cb075b5658063e data/c/tags/block/wooden_walls.json
-022daddccf5cd048fef2312c23895aaf67567e6e data/minecraft/tags/block/fence_gates.json
-be0e4204e19453c9360ca19711013aec1f3ff5e7 data/minecraft/tags/block/mineable/axe.json
-b278ca02cfdc42fddecce5f31d64303a727936c3 data/minecraft/tags/block/wooden_fences.json
-97ac52431db1bc84327a7e02aff099e32a7cbee2 data/minecraft/tags/block/wooden_slabs.json
-7a5d2838aaa59af22f9991895e19aec96d1e66ed data/minecraft/tags/block/wooden_stairs.json

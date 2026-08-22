@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.141'
+    id 'net.neoforged.moddev' version '2.0.144'
     id 'idea'
 }
 
@@ -80,10 +80,10 @@ repositories {
 dependencies {
     implementation "com.ametrinstudios:ametrin:${minecraft_version}-${ametrin_version}"
     implementation "com.ametrinstudios:block_variants:${minecraft_version}-${bv_version}"
-    implementation "curse.maven:oh-the-biomes-weve-gone-1070751:7741205"
+    implementation "curse.maven:oh-the-biomes-weve-gone-1070751:8259992"
     localRuntime "curse.maven:terrablender-neoforge-940057:7326873"
     localRuntime "curse.maven:geckolib-388172:7705308"
-    localRuntime "curse.maven:oh-the-trees-youll-grow-962544:7363818"
+    localRuntime "curse.maven:oh-the-trees-youll-grow-962544:8632156"
     localRuntime "curse.maven:corgilib-693313:7386252"
 }
 
