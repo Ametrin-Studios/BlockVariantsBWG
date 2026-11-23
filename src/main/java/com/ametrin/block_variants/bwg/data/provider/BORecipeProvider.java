@@ -15,17 +15,18 @@ import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.potionstudios.biomeswevegone.world.level.block.wood.BWGWood;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.concurrent.CompletableFuture;
 
 public final class BORecipeProvider extends ExtendedRecipeProvider {
 
     private RecipeOutput output;
     public BORecipeProvider(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
-        super(packOutput, BlockVariantsBWGIntegration.MOD_ID, registries);
+        super(BlockVariantsBWGIntegration.MOD_ID, packOutput, registries);
     }
 
-    @Override
-    protected void buildRecipes(RecipeOutput output) {
+    @Override @ParametersAreNonnullByDefault
+    protected void buildRecipes(RecipeOutput output, HolderLookup.Provider registries) {
         this.output = output;
 
         var featureflagSet = FeatureFlagSet.of(FeatureFlags.VANILLA);

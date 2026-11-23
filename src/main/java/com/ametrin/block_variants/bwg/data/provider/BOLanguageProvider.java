@@ -4,9 +4,7 @@ import com.ametrin.block_variants.bwg.BlockVariantsBWGIntegration;
 import com.ametrin.block_variants.bwg.registry.BOBlockFamilies;
 import com.ametrin.block_variants.bwg.registry.BOCreativeModeTabs;
 import com.ametrinstudios.ametrin.data.provider.ExtendedLanguageProvider;
-import net.minecraft.data.BlockFamily;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.ItemLike;
 
 public final class BOLanguageProvider extends ExtendedLanguageProvider {
     public BOLanguageProvider(PackOutput output) {
@@ -141,59 +139,5 @@ public final class BOLanguageProvider extends ExtendedLanguageProvider {
         family("Stripped Zelkova Log").family(BOBlockFamilies.STRIPPED_ZELKOVA_LOG);
         family("Zelkova Wood").family(BOBlockFamilies.ZELKOVA_WOOD);
         family("Stripped Zelkova Wood").family(BOBlockFamilies.STRIPPED_ZELKOVA_WOOD);
-    }
-
-    public FamilyBuilder family(String name) {
-        return new FamilyBuilder(this, name);
-    }
-
-    public static final class FamilyBuilder {
-        private final ExtendedLanguageProvider provider;
-        private final String name;
-
-        public FamilyBuilder(ExtendedLanguageProvider provider, String name) {
-            this.provider = provider;
-            this.name = name;
-        }
-
-        public FamilyBuilder family(BlockFamily family) {
-            family.getVariants().forEach((variant, block) -> {
-                switch (variant) {
-                    case STAIRS -> stairs(block);
-                    case SLAB -> slab(block);
-                    case WALL -> wall(block);
-                    case FENCE -> fence(block);
-                    case FENCE_GATE -> fenceGate(block);
-                    default -> throw new UnsupportedOperationException("en_us name for " + variant + " not implemented");
-                }
-            });
-
-            return this;
-        }
-
-        public FamilyBuilder stairs(ItemLike stairs) {
-            provider.add(stairs.asItem(), name + " Stairs");
-            return this;
-        }
-
-        public FamilyBuilder slab(ItemLike slab) {
-            provider.add(slab.asItem(), name + " Slab");
-            return this;
-        }
-
-        public FamilyBuilder wall(ItemLike slab) {
-            provider.add(slab.asItem(), name + " Wall");
-            return this;
-        }
-
-        public FamilyBuilder fence(ItemLike slab) {
-            provider.add(slab.asItem(), name + " Fence");
-            return this;
-        }
-
-        public FamilyBuilder fenceGate(ItemLike slab) {
-            provider.add(slab.asItem(), name + " Fence Gate");
-            return this;
-        }
     }
 }

@@ -1,7 +1,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.144'
+    id 'net.neoforged.moddev' version '2.0.148'
     id 'idea'
 }
 
@@ -60,11 +60,6 @@ configurations {
 repositories {
     mavenLocal()
 
-    maven {
-        name "Ametrin Studios Maven"
-        url "https://github.com/Ametrin-Studios/maven/raw/main/"
-    }
-
     exclusiveContent {
         forRepository {
             maven {
@@ -75,16 +70,23 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        name "Ametrin Studios Maven"
+        url "https://github.com/Ametrin-Studios/maven/raw/main/"
+    }
+    maven {
+        url uri(rootProject.file("../maven"))
+    }
 }
 
 dependencies {
-    implementation "com.ametrinstudios:ametrin:${minecraft_version}-${ametrin_version}"
+    implementation "com.ametrinstudios:ametrin-${minecraft_version}:${ametrin_version}"
     implementation "com.ametrinstudios:block_variants:${minecraft_version}-${bv_version}"
-    implementation "curse.maven:oh-the-biomes-weve-gone-1070751:7745142"
+    implementation "curse.maven:oh-the-biomes-weve-gone-1070751:9114631"
     localRuntime "curse.maven:terrablender-neoforge-940057:6054947"
-    localRuntime "curse.maven:geckolib-388172:7707149"
-    localRuntime "curse.maven:oh-the-trees-youll-grow-962544:7864151"
-    localRuntime "curse.maven:corgilib-693313:7773534"
+    localRuntime "curse.maven:geckolib-388172:9748637"
+    localRuntime "curse.maven:oh-the-trees-youll-grow-962544:9467823"
+    localRuntime "curse.maven:corgilib-693313:9113612"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
