@@ -511,6 +511,7 @@ public final class BOBlockFamilies {
             .fenceGate(BOWoodBlocks.STRIPPED_ZELKOVA_WOOD_FENCE_GATE.get()));
 
 
+    // TODO: use BVBlockFamilies.validate*
     private static BlockFamily logFamily(BlockFamily.Builder builder) {
         var family = builder.getFamily();
 
